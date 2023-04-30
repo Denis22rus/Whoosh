@@ -1,0 +1,81 @@
+.express {
+    padding: 98px 0px 96px;
+    &__container {
+        max-width: $expressContainer;
+    }
+    &__title-blog {
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        margin: 0 auto;
+        width: 745px;
+        p {
+            text-align: center;
+            margin-bottom: 39px;
+        }
+    }
+    &__items {
+        display: flex;
+        margin: 0px -25px;
+    }
+    &__columns {
+        flex: 0 1 33.333%;
+        padding: 0px 25px;
+    }
+    &__item {
+        position: relative;
+        padding: 23px 24px;
+        border: 1px solid $colorLightBlue;
+        border-radius: 8px;
+        background-color: #F8FAFF;
+        height: 100%;
+    }
+    &__item:hover {
+        border: 1px solid $colorBlue;
+        cursor: pointer;
+        background-color: #FFF;
+    }
+    &__item-title {
+        margin-bottom: 31px;
+    }
+    &__item-img {
+        margin-bottom: 38px;
+    }
+    &__road-img {
+        position: absolute;
+        top: 71px;
+        right: 80px;
+    }
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    background-color: $colorLightBlue;
+}
+.cube {
+    margin-top: 82px;
+    display: flex;
+    align-items: center;
+}
+.cube-img {
+    padding: 0px 30px;
+}
+
+@media(max-width: $md2) {
+    .express__subtitle {
+        width: 100%;
+    }
+    .express__items {
+        flex-direction: column;
+    }
+    .express__columns {
+        margin-bottom: 32px;
+    }
+    .express__columns:last-child {
+        margin-bottom: 0px;
+    }
+}

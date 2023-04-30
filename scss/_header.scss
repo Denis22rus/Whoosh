@@ -1,0 +1,175 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: #fff;
+    &__container {
+        max-width: $headerContainer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+
+    }
+    &__logo {
+        margin-right: 56px;
+        @media(max-width: 1010px) {
+            margin-right: 36px;
+        }
+        @media(max-width: $md1) {
+            margin: 0 auto;
+        }
+        img {
+            max-width: 100%;
+            @media(max-width: 1010px) {
+                width: 150px;
+            }
+        }
+    }
+    &__search {
+        padding: 5px 14px;
+        border: 1px solid $colorLightBlue;
+        border-radius: 8px;
+        @media(max-width: $md1) {
+            position: relative;
+            margin-bottom: 44px;
+        }
+    }
+    &__search:hover {
+        background-color: #EFF4FF;
+        input {
+            background-color: #EFF4FF;
+        }
+        button::before {
+            background-color: #EFF4FF;
+        }
+    }
+    &__search-input {
+        outline: none;
+    }
+    &__search-button {
+        cursor: pointer;
+        @media(max-width: $md1) {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+    &__search-button:hover {
+        cursor: pointer;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        @media(max-width: $md1) {
+            display: none;
+        }
+    }
+    &__lock {
+        width: 40px;
+        height: 40px;
+        background-color: $colorBlue;
+        border-radius: 32px;
+        padding: 7px 11px;
+        transition: all 0.2s linear;
+    }
+    &__lock:hover{
+        opacity: 70%;
+    }
+    &__hr {
+        width: 100%;
+        background-color: $colorLightBlue;
+        height: 1px;
+        display: block;
+    }
+    &__body {
+        display: flex;
+    }
+    &__menu {
+        width: 1017px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media(max-width: $md1) {
+            padding: 24px 16px 32px;
+            display: block;
+        }
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        @media(max-width: $md1) {
+            display: block;
+        }
+    }
+    &__item {
+        margin-right: 34px;
+        @media(max-width: $md1) {
+            margin: 0px 0px 24px 0px;
+        }
+    }
+    &__link {
+        color: #666666;
+        font-family: Intro-Book;
+        font-size: 1rem;
+        line-height: 24 / 16 * 100%;
+    }
+    &__link:hover {
+        opacity: 70%;
+    }
+}
+
+._icon-Search::before {
+    background: #fff;
+    padding-bottom: 3px;
+}
+._icon-location::before {
+    padding-right: 6px;
+}
+
+.focus {
+    border: 1px solid $colorBlue;
+}
+.focus-btn::before {
+    color: $colorBlue;
+}
+
+
+.header__order {
+    display: block;
+    background-color: $colorBlue;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 30px;
+    color: #fff;
+    font-family: Intro-Regular;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 32 / 18 * 100%;
+    cursor: pointer;
+    transition: background-color .2s linear;
+    width: 100%;
+    max-width: 242px;
+    position: absolute;
+    bottom: 10px;
+    @media(max-width: $md3) {
+        max-width: 192px;
+    }
+}
+.hide {
+    display: none;
+    @media(max-width: $md1) {
+        display: block;
+    }
+}
+
+

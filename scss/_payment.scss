@@ -1,0 +1,10 @@
+.payment {
+    padding: 96px 0px 98px;
+    &__container {
+        max-width: $workContainer;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,203 @@
+$headerContainer: 1332px;
+$workContainer: 1258px;
+$expressContainer: 1030px;
+$partnersContainer: 1130px;
+$whatContainer: 1030px;
+$textContainer: 1190px;
+$footerContainer: 1162px;
+
+
+$colorYellow: #FFDD2D;
+$colorBlue: #2B6BF3;
+$colorTxt: #1D253C;
+$colorLightBlue: #C2D2F4;
+$colorGreen: #27AE60;
+$colorLightGreen: #6FCF97;
+$colorRed: #FD466E;
+
+
+
+$minWidth: 320px;
+$maxWidth: 1440px;
+$minWidthContainer: 930px;
+$md1: 991.98px;
+$md2: 767.98px;
+$md3: 479.98px;
+@import "_nullstyle.scss";
+@import "_header.scss";
+@import "_work.scss";
+@import "_express.scss";
+@import "_partners.scss";
+@import "_what.scss";
+@import "_payment.scss";
+@import "_slider.scss";
+@import "_text.scss";
+@import "_footer.scss";
+
+@font-face {
+    font-weight: 400;
+    font-family: Intro-Bold;
+    src: url("../font/Intro-Bold.ttf");
+  }
+@font-face {
+    font-weight: 400;
+    font-family: Intro-Book;
+    src: url("../font/Intro-Book.ttf");
+}
+@font-face {
+    font-weight: 400;
+    font-family: Intro-Regular;
+    src: url("../font/Intro-Regular.ttf");
+}
+@font-face {
+    font-weight: 400;
+    font-family: Intro-Light;
+    src: url("../font/Intro-Light.ttf");
+}
+
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: Open Sans, Intro-Bold, Intro-Book, Intro-Regular, Intro-Light;
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff;
+    line-height: 22 / 14 * 100%;
+}
+
+/* ----------------*/
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+/* ----------------*/
+[class*="__container"] {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+// Burger
+@media (max-width: $md1) {
+    .header__menu {
+        transform: translate(110%, 0);
+        transition: transform 0.8s ease 0s;
+        position: fixed;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        overflow: auto;
+        background-color: #fff;
+        box-shadow: 0px 0px 24px 10px #B7C6E7;
+    }
+    ._active {
+        transform: translate(0px, 0%);
+    }
+}
+body._lock {
+    overflow: hidden;
+}
+.icon-menu {
+    display: none;
+    @media (max-width: $md1) {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        width: 30px;
+        height: 27px;
+        cursor: pointer;
+        z-index: 5;
+        span {
+            transition: all 0.3s ease 0s;
+            top: calc(50% - 1px);
+            left: 0px;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #B7C6E7 ;
+            border-radius: 5px;
+            &:first-child {
+                top: 0px;
+            }
+            &:last-child {
+                width: 50%;
+                left: 50%;
+                top: auto;
+                bottom: 0px;
+            }
+        }
+        &._active {
+            span {
+                transform: rotate(45deg);
+                top: calc(61% - 1px);
+                &:first-child {
+                    transform: rotate(-45deg);
+                    bottom: calc(50% - 1px);
+                }
+                &:last-child {
+                    scale: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.title {
+    font-family: Intro-Bold;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 48 / 40 * 100%;
+    color: $colorTxt;
+    @media(max-width: $md3) {
+        font-size: 1.5rem;
+    }
+}
+.title-h2 {
+    font-family: Intro-Bold;
+    font-size: 1.5rem;
+}
+.title-h3 {
+    font-family: Intro-Regular;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 32 / 22 * 100%;
+    color: $colorTxt;
+}
+.subtitle-22 {
+    font-family: Intro-Book;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 32 / 22 * 100%;
+    color: $colorTxt;
+    opacity: 48%;
+    @media(max-width: $md3) {
+        font-size: 1.25rem;
+    }
+}
+.subtitle-16 {
+    font-family: Intro-Book;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24 / 16 * 100%;
+    color: #666666;
+}
+.title-margin {
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: none;
+    @media(max-width: $md1) {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+}

@@ -1,0 +1,108 @@
+.partners {
+    padding: 0px 0px 47px;
+    &__container {
+        max-width: $partnersContainer;
+    }
+    &__titles {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 74px;
+    }
+    &__btn {
+        display: block;
+        background-color: #fff;
+        border: 1px solid $colorLightBlue;
+        border-radius: 24px;
+        padding: 12px 16px;
+        border-radius: 30px;
+        color: $colorTxt;
+        font-family: Intro-Book;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24 / 16 * 100%;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        margin-left: 269px;
+    }
+    &__btn:hover {
+        opacity: 70%;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        margin: 0px -40px;
+        overflow: auto;
+    }
+    &__column {
+        flex: 0 1 20%;
+        padding: 0px 20px;
+        text-align: center;
+        color: inherit;
+        cursor: pointer;
+    }
+    &__btn-2 {
+        display: none;
+        background-color: #fff;
+        border: 1px solid $colorLightBlue;
+        border-radius: 24px;
+        padding: 12px 16px;
+        border-radius: 30px;
+        color: $colorTxt;
+        font-family: Intro-Book;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24 / 16 * 100%;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        width: 100%;
+    }
+}
+
+._icon-Bug::before {
+    margin-right: 9px;
+}
+._icon-alva::before {
+    font-size: 30px;
+}
+._icon-tendo::before {
+    font-size: 30px;
+}
+._icon-fagor::before {
+    font-size: 40px;
+}
+._icon-radio::before {
+    font-size: 36px;
+}
+._icon-guitar::before {
+    font-size: 46px;
+}
+
+.rd:hover::before {
+    color: #F50B5A;
+}
+.blue:hover::before {
+    color: #1879BF;
+}
+.bl:hover::before {
+    color: #000000;
+}
+.red:hover::before {
+    color: #EB1B23;
+}
+
+@media(max-width: $md2) {
+    .partners__titles {
+        text-align: center;
+        display: block;
+        margin-bottom: 24px;
+    }
+    .partners__btn {
+        display: none;
+    }
+    .partners__items {
+        margin-bottom: 48px;
+    }
+    .partners__btn-2 {
+        display: block;
+    }
+}
