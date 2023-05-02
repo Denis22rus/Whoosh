@@ -340,10 +340,17 @@ h6 {
   border-right: 1px solid #2B6BF3;
   background-color: #EFF4FF;
   cursor: pointer;
+  padding: 38px 10px 10px 10px;
 }
 .work__tablinks span {
   font-size: 45px;
   color: #2B6BF3;
+}
+.work__tablinks:first-child {
+  padding: 0px;
+}
+.work__tablinks:last-child {
+  padding: 27px 10px 10px 10px;
 }
 .work__form input {
   outline: none;
@@ -488,10 +495,14 @@ h6 {
 }
 
 ._icon-Car_center::before {
+  position: relative;
+  top: -16px;
   font-size: 15px;
 }
 
 ._icon-car::before {
+  position: relative;
+  top: -11px;
   font-size: 25px;
 }
 
