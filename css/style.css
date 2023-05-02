@@ -340,17 +340,17 @@ h6 {
   border-right: 1px solid #2B6BF3;
   background-color: #EFF4FF;
   cursor: pointer;
-  padding: 38px 10px 10px 10px;
+  padding: 38px 0px 10px 0px;
 }
-.work__tablinks span {
-  font-size: 45px;
+.work__wood {
+  font-size: 35px;
   color: #2B6BF3;
 }
 .work__tablinks:first-child {
-  padding: 0px;
+  padding: 7px 0px 0px 0px;
 }
 .work__tablinks:last-child {
-  padding: 27px 10px 10px 10px;
+  padding: 29px 0px 10px 0px;
 }
 .work__form input {
   outline: none;
@@ -536,6 +536,9 @@ h6 {
   }
   .work__video {
     max-width: 100%;
+  }
+  .__hidden {
+    display: none;
   }
 }
 .express {
