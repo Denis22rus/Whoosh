@@ -69,7 +69,9 @@ body {
     background-color: #fff;
     line-height: 22 / 14 * 100%;
 }
-
+body._lock {
+    overflow: hidden;
+}
 /* ----------------*/
 .wrapper {
     overflow: hidden;
@@ -99,9 +101,7 @@ body {
         transform: translate(0px, 0%);
     }
 }
-body._lock {
-    overflow: hidden;
-}
+
 .icon-menu {
     display: none;
     @media (max-width: $md1) {
@@ -200,4 +200,16 @@ body._lock {
         top: 25px;
         left: 20px;
     }
+}
+
+.blue-fonts {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F1F4FC;
+    z-index: 100;
+    transition: all .6s linear;
 }

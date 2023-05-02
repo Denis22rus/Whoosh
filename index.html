@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/iconfonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600,700&display=swap" rel="stylesheet" />
     <title>Whoosh</title>
 </head>
 <body>
@@ -69,7 +68,7 @@
                             work in New York</h1>
                         <p class="work__subtitle">We make delivery exactly at the time you need - we can start to fulfill the order a few minutes after it arrives, or we can deliver on a specific day and hour.</p>
                         <a href="#" class="work__link">Read more
-                            <li class="">></li>
+                            <span class="">></span>
                         </a>
                         <h3 class="work__title-video title-h3">How it works</h3>
                         <div class="work__video">
@@ -86,11 +85,19 @@
                                 </div>
                                 <div class="work__tabs">
                                     <button type="submit" class="work__tablinks" id="tabs">
-                                        <div class="man-bike"><div class="_icon-Bike"></div><span class="work__wood">/</span><div class="_icon-Man"></div></div><span class="work__hidden">up to 10lb</span></button>
+                                        <div class="man-bike">
+                                            <div class="_icon-Bike"></div><span class="work__wood">/</span><div class="_icon-Man"></div>
+                                        </div>
+                                        <span class="work__hidden">up to 10lb</span>
+                                    </button>
                                     <button type="submit" class="work__tablinks" id="tabs">
-                                        <div class="_icon-Car_center"></div><span class="work__hidden">up to 130lb</span></button>
+                                        <div class="_icon-Car_center"></div>
+                                        <span class="work__hidden">up to 130lb</span>
+                                    </button>
                                     <button type="submit" class="work__tablinks" id="tabs">
-                                        <div class="_icon-car"></div><span class="work__hidden">over 130lb</span></button>
+                                        <div class="_icon-car"></div>
+                                        <span class="work__hidden">over 130lb</span>
+                                    </button>
                                 </div>
                                 <form class="work__form">
                                     <p class="work__form-title">Pickup location</p>
@@ -411,8 +418,9 @@
                 </div>
             </div>
         </footer>
-    </div>
+    <div class="blue-fonts"></div>
 
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/bundle.js"></script>
