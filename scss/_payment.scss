@@ -1,10 +1,16 @@
 .payment {
-    padding: 96px 0px 98px;
+    padding: 96px 0px 77px;
     &__container {
-        max-width: $workContainer;
+        max-width: $paymentContainer;
     }
     &__title {
         text-align: center;
         margin-bottom: 50px;
+    }
+}
+
+@media(max-width: $md3) {
+    .payment {
+        padding: 38px 0px 46px;
     }
 }

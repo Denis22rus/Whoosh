@@ -8,7 +8,6 @@
     &__container {
         max-width: $headerContainer;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         min-height: 80px;
     }
@@ -18,7 +17,7 @@
 
     }
     &__logo {
-        margin-right: 56px;
+        margin-right: 66px;
         @media(max-width: 1010px) {
             margin-right: 36px;
         }
@@ -27,18 +26,32 @@
         }
         img {
             max-width: 100%;
-            @media(max-width: 1010px) {
+            @media(max-width: 1030px) {
                 width: 150px;
             }
         }
     }
     &__search {
-        padding: 5px 14px;
+        margin-right: 211px;
+        display: flex;
+        width: 186px;
+        height: 40px;
+        padding: 12.5px 12px 12.5px 16px;
         border: 1px solid $colorLightBlue;
         border-radius: 8px;
         @media(max-width: $md1) {
             position: relative;
             margin-bottom: 44px;
+        }
+        @media(max-width: 1300px) {
+            margin-right: 100px;
+        }
+        @media(max-width: 1055px) {
+            margin-right: 50px;
+        }
+        @media(max-width: $md1) {
+            margin-right: 0px;
+            width: 75%;
         }
     }
     &__search:hover {
@@ -51,6 +64,7 @@
         }
     }
     &__search-input {
+        width: 100%;
         outline: none;
     }
     &__search-button {
@@ -95,7 +109,6 @@
         width: 1017px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         @media(max-width: $md1) {
             padding: 24px 16px 32px;
             display: block;
@@ -104,6 +117,15 @@
 }
 
 .menu {
+    &__body {
+        margin-right: 169px;
+        @media(max-width: 1300px) {
+            margin-right: 100px;
+        }
+        @media(max-width: 1088px) {
+            margin-right: 50px;
+        }
+    }
     &__list {
         display: flex;
         align-items: center;
@@ -112,10 +134,12 @@
         }
     }
     &__item {
-        margin-right: 34px;
         @media(max-width: $md1) {
             margin: 0px 0px 24px 0px;
         }
+    }
+    &__marg-right {
+        margin-right: 39px;
     }
     &__link {
         color: #666666;
@@ -125,6 +149,9 @@
     }
     &__link:hover {
         opacity: 70%;
+    }
+    &__marg-none {
+        margin-right: 0px;
     }
 }
 

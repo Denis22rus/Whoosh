@@ -10,7 +10,7 @@
     &__img {
         position: absolute;
         bottom: 0px;
-        left: 413px;
+        left: 489px;
         z-index: 0;
         @media(max-width: 1240px) {
             left: 300px;
@@ -19,6 +19,10 @@
     &__left-section {
         z-index: 100;
         flex: 0 1 375px;
+        margin-left: 68px;
+        @media(max-width: $md1) {
+        margin-left: 0px;
+        }
     }
     &__title {
         margin-bottom: 34px;
@@ -62,13 +66,14 @@
     }
     &__right-section {
         z-index: 100;
+        margin-top: -32px;
     }
     &__calc {
         border: 1px solid $colorLightBlue;
         width: 360px;
         border-radius: 10px;
         position: relative;
-        margin-bottom: 72px;
+        margin-bottom: 57px;
         background: #fff;
     }
     &__panel {
@@ -301,3 +306,47 @@
         display: none;
     }
 }
+
+@media(max-width: $md3) {
+    .work {
+        padding: 128px 0px 32px;
+    }
+    .work__panel {
+        padding: 33px 17px 18px;
+    }
+    .work__tablinks {
+        height: 48px;
+    }
+    .work__form p {
+        margin: 0px 0px 7px 39px;
+    }
+    .work__tabs {
+        margin-bottom: 41px;
+    }
+    .work__button {
+        margin-bottom: 7px;
+    }
+    .work__calc {
+        margin-bottom: 34px;
+    }
+    .work__search {
+        padding: 19px 19px;
+        margin-bottom: 51px;
+    }
+    .work__title {
+        margin-bottom: 19px;
+    }
+    .work__subtitle {
+        margin-bottom: 15px;
+    }
+    .work__link {
+        margin-bottom: 36px;
+    }
+    .work__title-video {
+        margin-bottom: 16px;
+    }
+    .work__title-panel {
+        margin-right: 28px;
+    }
+}
+

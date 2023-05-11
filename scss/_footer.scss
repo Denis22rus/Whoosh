@@ -1,5 +1,5 @@
 .footer {
-    padding: 84px 0px 56px;
+    padding: 90px 0px 56px;
     background: #F8FAFF;
     &__container {
         max-width: $footerContainer;
@@ -119,7 +119,7 @@
     text-align: center;
 }
 .cube2 {
-    margin: 25px 0px 24px;
+    margin: 17px 0px 15px;
 }
 .police {
     padding-left: 20px;
@@ -172,6 +172,31 @@
     }
     .footer__item-subtitle {
         margin-bottom: 24px;
+    }
+}
+
+@media(max-width: $md1) {
+    .footer {
+        padding: 41px 0px 21px;
+    }
+    .footer__item-title  {
+        padding-left: 14px;
+        margin-bottom: 28px;
+    }
+    .footer__item-subtitle {
+        margin-bottom: 5px;
+    }
+    .footer__item-center-blog {
+        margin-bottom: 25px;
+    }
+    .footer__item-about {
+        margin-bottom: 22px;
+    }
+    .footer__img {
+        margin: 31px 0px 46px 0px;
+    }
+    .footer__item-subtitle {
+        margin-bottom: 16px;
     }
 }
 @media(max-width: 380px) {

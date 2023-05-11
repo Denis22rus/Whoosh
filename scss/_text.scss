@@ -16,3 +16,9 @@
         cursor: pointer;
     }
 }
+
+@media(max-width: $md1) {
+    .text {
+        padding-bottom: 34px;
+    }
+}

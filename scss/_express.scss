@@ -1,5 +1,5 @@
 .express {
-    padding: 98px 0px 96px;
+    padding: 98px 0px 32px;
     &__container {
         max-width: $expressContainer;
     }
@@ -27,7 +27,10 @@
     }
     &__item {
         position: relative;
-        padding: 23px 24px;
+        padding: 23px 22px;
+        @media(max-width: $md1) {
+            padding: 23px 11px;
+        }
         border: 1px solid $colorLightBlue;
         border-radius: 8px;
         background-color: #F8FAFF;
@@ -42,7 +45,11 @@
         margin-bottom: 31px;
     }
     &__item-img {
-        margin-bottom: 38px;
+        margin-left: 23px;
+        margin-bottom: 44px;
+        @media(max-width: $md1) {
+            margin-left: 0px;
+        }
     }
     &__road-img {
         position: absolute;
@@ -79,3 +86,25 @@
         margin-bottom: 0px;
     }
 }
+
+@media(max-width: $md3) {
+    .express {
+        padding: 63px 0px 32px;
+    }
+    .express__title {
+        margin-bottom: 16px;
+    }
+    .express__item {
+        padding: 21px 37px;
+        }
+    .express__item-title {
+        margin-bottom: 38px;
+    }
+    .express__item-img {
+        img {
+            margin-left: 25px;
+        }
+
+    }
+}
+

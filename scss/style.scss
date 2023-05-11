@@ -1,10 +1,11 @@
 $headerContainer: 1332px;
-$workContainer: 1258px;
+$workContainer: 1328px;
 $expressContainer: 1030px;
-$partnersContainer: 1130px;
+$partnersContainer: 1153px;
 $whatContainer: 1030px;
 $textContainer: 1190px;
 $footerContainer: 1162px;
+$paymentContainer: 1188px;
 
 
 $colorYellow: #FFDD2D;
@@ -169,6 +170,9 @@ body._lock {
     font-weight: 400;
     line-height: 32 / 22 * 100%;
     color: $colorTxt;
+    @media(max-width: $md1) {
+        font-size: 1.25rem;
+    }
 }
 .subtitle-22 {
     font-family: Intro-Book;
@@ -212,4 +216,27 @@ body._lock {
     background-color: #F1F4FC;
     z-index: 100;
     transition: all .6s linear;
+}
+
+@media(max-width: $md3) {
+    .icon-menu {
+        top: 26px;
+        right: 20px;
+        width: 30px;
+        height: 12px;
+    }
+    .icon-menu span {
+        left: 14px;
+        width: 60%;
+        height: 2px;
+    }
+    .icon-menu span:last-child {
+        width: 50%;
+        left: 59%;
+        top: auto;
+        bottom: 0px;
+    }
+    .cube {
+        margin-top: 44px;
+    }
 }
